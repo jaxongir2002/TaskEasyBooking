@@ -11,7 +11,7 @@ import postavshik from '../viwsDashbord/postavshik.vue'
 import provaydri from '../viwsDashbord/provaydri.vue'
 import search from '../viwsDashbord/search.vue'
 import zakazi from '../viwsDashbord/zakazi.vue'
-import menuHome from '../dashbordComp/menuHome.vue'
+import menuHome from '../dashbordComp/MenuHome.vue'
 
 
 const routes = [

@@ -9,23 +9,23 @@
             </h2>
             <h2>Сложный маршрут</h2>
         </div>
-        <div class="mt-4">
-            <div class="card flex justify-content-center gap-2">
+        <div class="mt-4 pt-3">
+            <div class="card flex justify-content-center  gap-2">
                 <span class="p-float-label">
-                    <InputText id="text" v-model="firstName" />
+                    <InputText id="text" v-model="firstName" class="cursor-pointer" />
                     <label for="Откуда">Откуда</label>
                 </span>
-                <img src="/src/assets/icons/2ta strelka.svg" alt="" class="" @click="replaceNames">
+                <img src="/src/assets/icons/2ta strelka.svg" alt="" class="cursor-pointer" @click="replaceNames">
                 <span class="p-float-label">
-                    <InputText id="text" v-model="lastName" />
+                    <InputText id="text" v-model="lastName" class="cursor-pointer" />
                     <label for="Откуда">Куда</label>
                 </span>
                 <span class="p-float-label">
-                    <InputText id="number" v-model="dataNum" />
+                    <InputText id="number" v-model="dataNum" class="cursor-pointer" />
                     <label for="Дата туда">Дата туда</label>
                 </span>
                 <span class="p-float-label">
-                    <InputText id="number" v-model="dataObr" />
+                    <InputText id="number" v-model="dataObr" class="cursor-pointer" />
                     <label for="Дата обратно">Дата обратно</label>
                 </span>
                 <Dropdown v-model="selectedClass" :options="classes" optionLabel="name" placeholder="1 пасс"
@@ -67,26 +67,26 @@ const classes = ref([
 ]);
 const selectedCity = ref();
 const cities = ref([
-    { 
-        name: 'Экономкласс', 
-        code: 'NY' 
+    {
+        name: 'Экономкласс',
+        code: 'NY'
     },
-    { name: 'Премиум-экономкласс',
-      code: 'RM' 
+    {
+        name: 'Премиум-экономкласс',
+        code: 'RM'
     },
 
 ]);
 
 </script>
 
-<style scoped>
+<style>
 .p-dropdown:not(.p-disabled):hover {
     border-color: #18BCDB;
 }
 
 .btn1 {
     width: 100px;
-    /* height:100px; */
     border-radius: 16px;
     padding: 10px 18px;
     background: #18BCDB;
@@ -94,17 +94,15 @@ const cities = ref([
 
 .p-component {
     box-shadow: none !important;
-    /* border: #00B8D7 !important; */
 }
 
 .p-inputtext:enabled:hover {
-    border-color: #00B8D7;
+    border-color: #00B8D7 !important;
 }
 
 .text1 {
     font-family: 'Caprasimo', cursive;
     font-family: 'Inter', sans-serif;
-
 }
 
 .color_ {

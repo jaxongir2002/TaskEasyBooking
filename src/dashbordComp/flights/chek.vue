@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="card flex justify-content-center gap-2 mt-3">
+        <div class="card flex justify-content-center gap-2 mt-5">
             <label class="switch">
   <input type="checkbox" v-model="checked2">
   <span class="slider"></span>

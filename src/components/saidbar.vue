@@ -22,18 +22,17 @@
                     {{ menu1.name }}
                 </span>
             </router-link>
-       
-<div v-show="saidbarIsOpen == false">
-    <div :id="'tooltip-' + menu1.id + '-right'" role="tooltip"
-          
-                class="absolute z-10 srt invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 hover1 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-                {{ menu1.name }}
-                <div class="tooltip-arrow"    data-popper-arrow></div>
-            </div> 
-      
-</div>
 
-           
+            <div v-show="saidbarIsOpen == false">
+                <div :id="'tooltip-' + menu1.id + '-right'" role="tooltip"
+                    class="absolute z-10 srt invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 hover1 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                    {{ menu1.name }}
+                    <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+            </div>
+
+
         </div>
 
     </div>
@@ -118,8 +117,8 @@ let menu = [
 </script>
 
 <style scoped>
-.srt{
-    transition: opacity 1s ease; 
+.srt {
+    transition: opacity 1s ease;
 }
 
 

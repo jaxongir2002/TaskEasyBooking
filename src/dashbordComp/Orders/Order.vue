@@ -1,6 +1,6 @@
 <template>
     <div class="bg_ mt-7 ">
-<div class="flex justify-between p-3 border_r">
+<div class="flex justify-between p-5 border_r">
     <h1 class="text-3xl font_ font_1 ">
         Заказы
     </h1>
@@ -9,27 +9,27 @@
     </h1>
 </div>
 <div class="grid grid-cols-12">
-  <resi class="col-span-6"/>
-<resi2 class="col-span-6"></resi2>  
+  <Res class="col-span-6"/>
+<Res2 class="col-span-6"></Res2>  
 </div>
 
     </div>
 </template>
 
 <script setup>
-import resi from './resi1.vue';
-import resi2 from './resi2.vue';
+import Res from './Res.vue';
+import Res2 from './res2.vue';
 </script>
 
 <style scoped>
 .bg_{    
-    background: rgba(255, 255, 255, 0.26);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.3px);
-    -webkit-backdrop-filter: blur(8.3px);
-    border: 1px solid rgba(255, 255, 255, 0.476); 
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 24px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    padding: 16px, 24px, 16px, 24px !important;
 
-    border-radius: 20px;
 }
 .font_ {
     color: #475569;
