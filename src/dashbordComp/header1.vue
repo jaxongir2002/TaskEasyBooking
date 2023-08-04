@@ -77,5 +77,6 @@ let isActive = ref(false)
 
 .right_ {
     right: 10px;
+    top: 30px;
 }
 </style>

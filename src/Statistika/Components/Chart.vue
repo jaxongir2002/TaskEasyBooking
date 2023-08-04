@@ -1,6 +1,10 @@
 <template>
-    <div>
+    <div class="relative">
         <canvas id="myChart" class="chart"></canvas>
+        <h2 class="center text-2xl w-1/2 text-center font">
+          321,32 млн UZS
+        </h2>
+
     </div>
 </template>
 
@@ -8,9 +12,9 @@
 import Chart from 'chart.js/auto';
 import { onMounted } from 'vue';
 
-const image = new Image();
-image.src = 'https://www.chartjs.org/img/chartjs-logo.svg';
+const image = document.createElement('h1');
 
+image.innerHTML = ''
 const plugin = {
   id: 'customCanvasBackgroundImage',
   beforeDraw: (chart) => {
@@ -28,18 +32,16 @@ const plugin = {
 
 
   const data = {
-  labels: [
-    'Red',
-    'Blue',
-    'Yellow'
-  ],
+ 
   datasets: [{
     label: 'My First Dataset',
-    data: [100, 50, 100],
+    data: [30, 100, 50,30],
     backgroundColor: [
       'rgb(255, 99, 132)',
       'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)'
+      'rgb(255, 205, 86)',
+      'rgba(39, 174, 96, 1)'
+
     ],
    
     hoverOffset: 4
@@ -60,5 +62,16 @@ const config = {
 </script>
 
 <style scoped>
+.center{
+  position: absolute;
+  top: 120px;
+  right: 73px;
 
+}
+.font{
+    font-family: 'Caprasimo', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Mulish', sans-serif;
+font-weight: 500;
+}
 </style>

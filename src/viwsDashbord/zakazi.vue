@@ -1,6 +1,6 @@
 <template>
     <div>
-zakazi
+
     </div>
 </template>
 

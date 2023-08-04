@@ -1,21 +1,21 @@
 <template>
-    <div class="p-7 trans" :class="{ addSaidbar: saidbarIsOpen == false }">
-        <div class="flex gap-7 mt-9 " v-if="saidbarIsOpen">
+    <div class="trans" :class="{ addSaidbar: saidbarIsOpen == false }">
+        <div class="flex gap-7 mt-20 ms-7" v-if="saidbarIsOpen">
             <img src="../assets/Vector.png" alt="">
 
             <saidbarSvg @click="toggleSaidbar()" class="cursor-pointer" />
         </div>
-        <div v-if="saidbarIsOpen == false" class="mt-9">
+        <div v-if="saidbarIsOpen == false" class="mt-9 ">
             <img src="../assets/logosecond.svg" alt="" class="block">
 
             <img src="../assets/iconZakaz/Arrow - Down Square.svg" alt="" @click="toggleSaidbar()"
                 class="cursor-pointer m-auto mt-4">
         </div>
-        <button class="mt-6 font_">
+        <button class="mt-6 font_ ms-10">
             Меню
         </button>
-        <div v-for="menu1 of menu" :key="menu1.id" class="mt-7" :class="{ addM: saidbarIsOpen == false }">
-            <router-link class="font_ text-lg flex gap-2" :to="menu1.path">
+        <div v-for="menu1 of menu" :key="menu1.id" class="mt-2 hover3 trans p-3" :class="{ addM: saidbarIsOpen == false }">
+            <router-link class="font_ text-lg ms-7 flex gap-2" :to="menu1.path">
                 <img :src="menu1.icons" alt="" class="mt-1 w-5 pb-2 me-2 "
                     :data-tooltip-target="'tooltip-' + menu1.id + '-right'" data-tooltip-placement="right">
                 <span v-if="saidbarIsOpen">
@@ -29,10 +29,10 @@
                     {{ menu1.name }}
                     <div class="tooltip-arrow" data-popper-arrow></div>
                 </div>
-
+            
             </div>
-
-
+        
+        
         </div>
 
     </div>
@@ -128,7 +128,9 @@ let menu = [
 }
 
 .trans {
-    transition: .8s;
+    transition: .3s;
+
+
 }
 
 .addSaidbar {
@@ -140,11 +142,22 @@ let menu = [
     color: #475569;
     font-family: 'Caprasimo', cursive;
     font-family: 'Inter', sans-serif;
-
 }
+
+
 
 a.router-link-exact-active {
     color: #00B8D7;
+
+}
+
+.hover3:hover {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    background: rgba(29, 27, 32, 0.04);
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
 
 }
 

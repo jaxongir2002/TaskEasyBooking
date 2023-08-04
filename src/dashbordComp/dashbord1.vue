@@ -1,7 +1,6 @@
 <template>
     <div>
 
-        <header1/> 
         <content/>
 
   
@@ -9,7 +8,7 @@
 </template>
 
 <script setup>
-import header1 from './header1.vue';
+
 import content from '@/dashbordComp/Content.vue'
 
 

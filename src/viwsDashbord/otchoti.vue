@@ -1,6 +1,6 @@
 <template>
     <div>
-otchot
+
     </div>
 </template>
 

@@ -10,7 +10,5 @@
 </script>
 
 <style scoped>
-.router-link-active{
-background-color: #00B8D7 !important;
-}
+
 </style>

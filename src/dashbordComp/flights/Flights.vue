@@ -109,4 +109,22 @@ const cities = ref([
     color: #00B8D7;
 
 }
+.p-dropdown:not(.p-disabled):hover {
+    border-color: #00B8D7 !important;
+}
+.p-dropdown:not(.p-disabled):focus {
+    border-color: #00B8D7 !important;
+}
+.p-inputtext:enabled:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #C7D2FE;
+    border-color: #00B8D7 !important;
+}
+.p-dropdown:not(.p-disabled).p-focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem #C7D2FE;
+    border-color: #00B8D7 !important;
+}
 </style>
