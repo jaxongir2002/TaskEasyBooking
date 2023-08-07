@@ -1,7 +1,7 @@
 <template>
     <div class="p-2">
       
-            <div class="glass p-5 mt-20 ms-24" :class="['glass', { 'overflow-auto': isGlassOverflow }]">
+            <div class="glass p-5 mt-20 ms-28" :class="['glass', { 'overflow-auto': isGlassOverflow }]">
                 <ScrollPanel style="width: 100%; height: 79vh;">
             <div ref="list" class="list bg-transparent" style="border-radius: 40px;">
 
@@ -66,7 +66,7 @@ onMounted(() => {
     position: absolute;
     z-index: -333;
     top: 730px; 
-    right: 10px; 
+    right: 40px; 
     border-radius: 50%;
      transform: rotate(90deg);
     background: radial-gradient(111.51% 112.49% at -7.04% 7.46%, #FFFFFF 0%, #9392eed0 71.1%, #FFFFFF 100%);
@@ -107,7 +107,7 @@ onMounted(() => {
     backdrop-filter: blur(8.3px);
     -webkit-backdrop-filter: blur(8.3px);
     border: 1px solid rgba(255, 255, 255, 0.51);
-    width: 1500px !important;
+    width: 1450px !important;
     box-sizing: border-box !important;
     background-attachment: fixed;
 

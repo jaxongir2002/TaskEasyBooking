@@ -64,7 +64,6 @@
 
 import Chart1 from './Chart1.vue';
 import { ref } from 'vue';
-const value = ref(60);
 const period = ref([
     {
         id: 1,

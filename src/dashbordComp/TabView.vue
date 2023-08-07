@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <TabView class="tabview-custom box_sh min-w-min">
+            <TabView class="tabview-custom min-w-min">
                 <TabPanel>
                     <template #header>
                         <img src="../assets/icons/samalyot.svg" alt="" class="me-2">
@@ -97,4 +97,22 @@ import TabPanel from 'primevue/tabpanel';
 import Flights from '../dashbordComp/flights/flights.vue'
 </script>
 
-<style lang="scss" ></style>
+<style>
+.p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
+    background: rgba(29, 27, 32, 0.08) !important; 
+    border-radius: 1px;
+    border-color: rgba(71, 85, 105, 0.15)!important;
+    color: #6c757d;
+}
+.p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):first-child .p-tabview-nav-link {
+    border-top-left-radius: 20px;
+    border-color: rgba(71, 85, 105, 0.15)!important;
+    color: #6c757d;
+}
+.p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):first-child:hover .p-tabview-nav-link {
+    background: rgba(29, 27, 32, 0.08) !important; 
+    border-top-left-radius: 20px;
+    border-color: rgba(71, 85, 105, 0.15)!important;
+    color: #6c757d;
+}
+</style>

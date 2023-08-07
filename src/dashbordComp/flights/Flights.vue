@@ -11,25 +11,25 @@
     <div class="mt-4 pt-3">
         <div class="flex justify-content-center gap-1">
             <span class="p-float-label">
-                <InputText id="text" v-model="firstName" class="cursor-pointer" />
+                <InputText id="text" v-model="firstName" class="cursor-pointer h-14 w-60" />
                 <label for="Откуда">Откуда</label>
             </span>
             <img src="/src/assets/icons/2ta strelka.svg" alt="" class="cursor-pointer" @click="replaceNames">
             <span class="p-float-label">
-                <InputText id="text" v-model="lastName" class="cursor-pointer" />
+                <InputText id="text" v-model="lastName" class="cursor-pointer h-14 w-60 " />
                 <label for="Откуда">Куда</label>
             </span>
             <span class="p-float-label">
-                <InputText id="number" v-model="dataNum" class="cursor-pointer" />
+                <InputText id="number" v-model="dataNum" class="cursor-pointer  h-14" />
                 <label for="Дата туда">Дата туда</label>
             </span>
             <span class="p-float-label">
-                <InputText id="number" v-model="dataObr" class="cursor-pointer" />
+                <InputText id="number" v-model="dataObr" class="cursor-pointer  h-14    " />
                 <label for="Дата обратно">Дата обратно</label>
             </span>
 
             <button id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider"
-                class="  text_ font-medium rounded-lg text-sm w-5/12 p-1  text-center inline-flex gap-10 items-center "
+                class="  text_ font-medium rounded-lg text-sm w-40 p-1  text-center inline-flex gap-10 items-center "
                 type="button">
                 <span class="flex gap-2"><img src="@/assets/ManIcon.svg" alt="">1 пасс</span>
                 <svg width="12" height="7" viewBox="0 0 12 7"
@@ -66,9 +66,9 @@
 
 
             <Dropdown v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Эканом кллас"
-                class="w-full md:w-14rem" />
+                class="w-52 md:w-14rem" />
             <button class=" btn1">
-                <img src="/src/assets/icons/SearchBtn.svg" class="srt ms-4" alt="">
+                <img src="/src/assets/icons/SearchBtn.svg" class="srt ms-5" alt="">
             </button>
         </div>
 
@@ -130,8 +130,8 @@ const cities = ref([
 }
 
 .btn1 {
-    width: 250px;
-    height: 50px;
+    width: 65px !important;
+    height: 53px !important;
     border-radius: 16px;
     background: #18BCDB;
 }

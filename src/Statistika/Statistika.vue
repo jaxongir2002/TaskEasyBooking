@@ -11,7 +11,7 @@
 <div class=" grid grid-cols-12">
  <Chart class="srt mt-16 col-span-2"/>
 <SelectPeriod class="col-span-6 ms-9"></SelectPeriod>   
-<Calendar class="col-span-4 ms-6"/>
+<Calendar class="col-span-4 "/>
 </div>
 
 
