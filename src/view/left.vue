@@ -1,6 +1,6 @@
 <template>
     <div class="width1">
-<img src="../assets/Frame 1171275362.png" alt="">
+<img src="../assets/Fram.png" alt="">
     </div>
 </template>
 
