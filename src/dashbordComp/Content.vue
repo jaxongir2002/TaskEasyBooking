@@ -1,7 +1,7 @@
 <template>
-    <div class="p-3">
+    <div class="p-2">
       
-            <div class="glass p-5 mt-20 ms-16   " :class="['glass', { 'overflow-auto': isGlassOverflow }]">
+            <div class="glass p-5 mt-20 ms-24" :class="['glass', { 'overflow-auto': isGlassOverflow }]">
                 <ScrollPanel style="width: 100%; height: 79vh;">
             <div ref="list" class="list bg-transparent" style="border-radius: 40px;">
 
@@ -65,7 +65,7 @@ onMounted(() => {
     height: 170px; 
     position: absolute;
     z-index: -333;
-    top: 780px; 
+    top: 730px; 
     right: 10px; 
     border-radius: 50%;
      transform: rotate(90deg);
@@ -77,21 +77,17 @@ onMounted(() => {
     height: 252px; 
     position: absolute;
     z-index: -333;
-    top: 680px; 
-    left: 270px; 
+    top: 630px; 
+    left: 300px; 
     border-radius: 50%;
     transform: rotate(90deg);
     background: radial-gradient(96.36% 96.84% at 24.63% 38.89%, #FFFFFF 0%, #E6FBFE 0.01%, #95DCFA 71.35%, #E4F9FF 100%) ;
 
 }
-
-.overflow-auto {
-    overflow: hidden;
-}
-
 .p-tabview .p-tabview-panels {
-    border-bottom-right-radius: 15px !important;
-    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 25px !important;
+    border-bottom-left-radius: 25px !important;
+    box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.181),0px 2px 4px -2px rgba(16, 24, 40, 0.162) !important;
 }
 
 .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
@@ -102,17 +98,8 @@ onMounted(() => {
 }
 
 .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
-    outline: 0 none;
-    outline-offset: 0;
     box-shadow: none !important;
 }
-
-.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
-    outline: 0 none;
-    outline-offset: 0;
-    box-shadow: inset 0 0 0 0.2rem #c7d2fe00;
-}
-
 
 .glass {
     background: rgba(255, 255, 255, 0.31);

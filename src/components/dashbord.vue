@@ -1,9 +1,9 @@
 <template>
   <div class="relative " >
 <div>
-  <div class="grid relative bottom-8 grid-rows-7 grid-flow-col " >
+  <div class="grid  grid-rows-7 grid-flow-col " >
       <div>
-        <saidbar  />
+        <saidbar/>
         
       </div>
 
@@ -17,7 +17,7 @@
             </transition>
 
           </router-view>
-          <Footer1/>
+    
 
 
       </div>
@@ -30,8 +30,6 @@
 <script setup>
 import saidbar from '../components/saidbar.vue'
 import header1 from '../dashbordComp/header1.vue';
-import Footer1 from '../dashbordComp/Footer1.vue';
-
 </script>
 
 <style scoped>

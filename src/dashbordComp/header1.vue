@@ -33,7 +33,9 @@
                 <i class="fas fa-bell color1 text-xl"></i>
                 <span class="badge badge-notification bg-danger p-1 text-white">32</span>
             </a>
-            <img src="../assets/trailing-icon.png" alt="country" class="mt-3 h-12">
+            <HeaderMan></HeaderMan>
+
+
         </div>
 
     </div>
@@ -41,6 +43,8 @@
 
 <script setup>
 import { ref } from 'vue'
+import HeaderMan from './HeaderMan.vue';
+
 let isActive = ref(false)
 </script>
 
@@ -77,6 +81,6 @@ let isActive = ref(false)
 
 .right_ {
     right: 10px;
-    top: 30px;
+
 }
 </style>

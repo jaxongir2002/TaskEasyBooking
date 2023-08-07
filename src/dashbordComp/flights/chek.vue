@@ -28,7 +28,7 @@ const checked2 = ref(false);
     font-family: 'Inter', sans-serif;
 
 }
-/* The switch - the box around the slider */
+
 .switch {
   font-size: 17px;
   position: relative;
@@ -37,14 +37,14 @@ const checked2 = ref(false);
   height: 2em;
 }
 
-/* Hide default HTML checkbox */
+
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
+
 .slider {
   position: absolute;
   cursor: pointer;

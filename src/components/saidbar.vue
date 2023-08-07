@@ -1,12 +1,12 @@
 <template>
     <div class="trans" :class="{ addSaidbar: saidbarIsOpen == false }">
-        <div class="flex gap-7 mt-20 ms-7" v-if="saidbarIsOpen">
+        <div class="flex gap-7 mt-7 ms-7" v-if="saidbarIsOpen">
             <img src="../assets/Vector.png" alt="">
 
             <saidbarSvg @click="toggleSaidbar()" class="cursor-pointer" />
         </div>
-        <div v-if="saidbarIsOpen == false" class="mt-9 ">
-            <img src="../assets/logosecond.svg" alt="" class="block">
+        <div v-if="saidbarIsOpen == false" class="mt-9 ms-4 m-auto">
+            <img src="../assets/logosecond.svg" alt="" class="block ms-7">
 
             <img src="../assets/iconZakaz/Arrow - Down Square.svg" alt="" @click="toggleSaidbar()"
                 class="cursor-pointer m-auto mt-4">
@@ -34,7 +34,13 @@
         
         
         </div>
-
+       
+<h3 class=" logout border-t-2 border-white">
+ 
+  <h3 class="flex gap-2 mt-3 ">
+    <img src="@/assets/Logout.svg" alt="">  Выйти
+  </h3>
+</h3>
     </div>
 </template>
 
@@ -117,6 +123,13 @@ let menu = [
 </script>
 
 <style scoped>
+.logout{
+    margin-top: 110px;
+    position: relative;
+    top:55px;
+    left: 24px;
+
+}
 .srt {
     transition: opacity 1s ease;
 }
@@ -134,7 +147,7 @@ let menu = [
 }
 
 .addSaidbar {
-    width: 90px;
+    width: 120px;
 
 }
 
