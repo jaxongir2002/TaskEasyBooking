@@ -94,7 +94,7 @@
 <script setup>
 import TabView from 'primevue/tabview';
 import TabPanel from 'primevue/tabpanel';
-import Flights from '../dashbordComp/flights/flights.vue'
+import Flights from '../dashbordComp/flights/flight.vue'
 </script>
 
 <style>
