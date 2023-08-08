@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import home from '../components/home.vue'
 import dashbord from '../components/dashbord.vue'
-import glavni from '../dashbordComp/Dashbord1.vue'
+import glavni from '../dashbordComp/Dashbord2.vue'
 import dagavor from '../viwsDashbord/dagavor.vue'
 import izbroni from '../viwsDashbord/izbroni.vue'
 import nastroyki from '../viwsDashbord/nastroyki.vue'
