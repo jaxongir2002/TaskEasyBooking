@@ -1,6 +1,5 @@
 <template>
     <div>
-
         <content />
         <Footer1 />
 
