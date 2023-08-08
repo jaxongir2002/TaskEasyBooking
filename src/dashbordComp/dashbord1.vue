@@ -1,9 +1,9 @@
 <template>
     <div>
 
-        <content/>
-<Footer1/>
-  
+        <content />
+        <Footer1 />
+
     </div>
 </template>
 
@@ -15,5 +15,4 @@ import Footer1 from './Footer1.vue';
 
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
