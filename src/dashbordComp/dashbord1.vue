@@ -8,7 +8,7 @@
 
 <script setup>
 
-import content from './Content.vue'
+import content from './content1.vue'
 import Footer1 from './Footer1.vue';
 
 
