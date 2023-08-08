@@ -1,29 +1,29 @@
 <template>
-  <div class="relative " >
-<div>
-  <div class="grid  grid-rows-7 grid-flow-col " >
-      <div>
-        <saidbar/>
-        
-      </div>
+  <div class="relative ">
+    <div>
+      <div class="grid  grid-rows-7 grid-flow-col ">
+        <div>
+          <saidbar />
 
-      <div class="col-span-6">
-    
-        <header1></header1>
-   
+        </div>
+
+        <div class="col-span-6">
+
+          <header1></header1>
+
           <router-view v-slot="{ Component }">
             <transition name="fade" mode="out-in">
               <component v-bind:is="Component" class="static" />
             </transition>
 
           </router-view>
-    
 
 
+
+        </div>
       </div>
     </div>
-</div>
-    
+
   </div>
 </template>
 

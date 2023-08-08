@@ -29,18 +29,18 @@
                     {{ menu1.name }}
                     <div class="tooltip-arrow" data-popper-arrow></div>
                 </div>
-            
+
             </div>
-        
-        
+
+
         </div>
-       
-<h3 class=" logout border-t-2 border-white">
- 
-  <h3 class="flex gap-2 mt-3 ">
-    <img src="@/assets/Logout.svg" alt="">  Выйти
-  </h3>
-</h3>
+
+        <h3 class=" logout border-t-2 border-white">
+
+            <h3 class="flex gap-2 mt-3 ">
+                <img src="@/assets/Logout.svg" alt=""> Выйти
+            </h3>
+        </h3>
     </div>
 </template>
 
@@ -123,13 +123,14 @@ let menu = [
 </script>
 
 <style scoped>
-.logout{
+.logout {
     margin-top: 110px;
     position: relative;
-    top:55px;
+    top: 55px;
     left: 24px;
 
 }
+
 .srt {
     transition: opacity 1s ease;
 }
