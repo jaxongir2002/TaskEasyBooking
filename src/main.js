@@ -11,16 +11,10 @@ import VCalendar from 'v-calendar';
 import 'v-calendar/style.css';
 
 
-
-
 const app = createApp(App);
-// app.use(PrimeVue, { unstyled: true });
-
 app.use(ToastService);
 app.use(naive)
 app.use(PrimeVue);
 app.use(router)
 app.use(VCalendar, {})
-
-
 app.mount('#app')

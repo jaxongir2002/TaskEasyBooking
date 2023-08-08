@@ -11,7 +11,7 @@
 
                 <div>
                 </div>
-                <div v-for="item in items" class="mb-3" :key="item.id" :index="index">
+                <div class="mb-3" >
                     <Order></Order>
                 </div>
                 <Statistika />
