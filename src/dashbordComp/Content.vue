@@ -32,7 +32,7 @@
 <script setup>
 import ScrollPanel from 'primevue/scrollpanel';
 import TabView from './TabView.vue';
-import Order from './Orders/order.vue';
+import Order from './Order1/order.vue';
 import Sortable from 'sortablejs'
 import Statistika from '../Statistika/Statistika.vue';
 import Treaties from '@/Treaties/Treaties.vue'
