@@ -61,7 +61,6 @@
 </template>
 
 <script setup>
-
 import Chart1 from './Chart1.vue';
 import { ref } from 'vue';
 const period = ref([

@@ -36,8 +36,7 @@
 </template>
 
 <script setup>
-
-import { onMounted,ref } from 'vue';
+import { ref } from 'vue';
 import Button from 'primevue/button';
 const email = ref('')
 const password = ref('')

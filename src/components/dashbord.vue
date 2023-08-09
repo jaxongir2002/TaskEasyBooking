@@ -12,9 +12,9 @@
           <header1></header1>
 
           <router-view v-slot="{ Component }">
-            <transition name="fade" mode="out-in">
+            <Transition name="fade" mode="out-in">
               <component v-bind:is="Component" class="static" />
-            </transition>
+            </Transition>
 
           </router-view>
 
